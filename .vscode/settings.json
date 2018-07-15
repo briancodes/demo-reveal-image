@@ -1,0 +1,29 @@
+{
+  "files.exclude": {
+      "e2e/": false,
+      "node_modules/": false,
+      ".vscode/": false,
+      // Project Files
+      "tsconfig.json": false,
+      "tslint.json": false,
+      "tslint-base.json": false,
+      "protractor.conf.js": false,
+      "package.json":false,
+      "package-lock.json": false,
+      "karma.conf.js": false,
+      ".editorconfig": false,
+      ".gitignore": false,
+      ".angular-cli.json": false,
+      // src folder config files
+      "src/tsconfig.app.json": false,
+      "src/tsconfig.spec.json": false,
+      "src/typings.d.ts": false,
+      "src/test.ts": false,
+      "src/favicon.ico": false,
+      "src/assets":false,
+      "src/environments":false,
+      "src/main.ts":false,
+      "src/polyfills.ts":false,
+      "src/styles.scss":false,
+    }
+}

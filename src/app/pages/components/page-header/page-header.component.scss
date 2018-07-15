@@ -1,0 +1,27 @@
+.page-header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+// Medium article on visibility and opacity
+// @see https://medium.engineering/five-goofy-things-medium-did-that-break-accessibility-3bc804ae818d
+.cover {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    background-size: cover;
+    background-position: top center;
+    &.reveal-image {
+        visibility: visible;
+        opacity: .9;
+        transition: visibility 0s linear 0s, opacity 1.5s 0s;
+    }
+}

@@ -1,0 +1,4 @@
+<button class="load" color="secondary" mat-raised-button (click)="loadNewPage($event)">Reload Page</button>
+<button class="reuse" color="secondary" mat-raised-button (click)="loadReusedRoute($event)">Reuse Route</button>
+<mat-checkbox class="reflow" [checked]="reflowChecked" (change)="toggleReflow($event)">Force Reflow</mat-checkbox>
+<router-outlet></router-outlet>

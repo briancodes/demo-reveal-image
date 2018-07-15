@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~normalize.css/normalize.css'; // full path or StackBlitz gives errors
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+  @media screen and (max-width: 450px) {
+      font-size: 10px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+// normalize does not configure box-sizing
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6em;
+    background: #303030;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+// Typography - placing in main styles for demo only
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+b,
+strong {
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em; // useragent -webkit-margin-after is usually 1em anyway
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.8em; // 1.5em is a bit too much
+    margin-top: 0.8em;
+    letter-spacing: 0.01em;
+    font-family: 'Bungee', sans-serif;
+    color: #4a4a54;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 1.1em;
+    line-height: 1.35;
+}
+
+h5 {
+    font-size: 1em;
+    letter-spacing: -.05em;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: .8em;
+    letter-spacing: 0;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
