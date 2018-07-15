@@ -56,7 +56,7 @@ export class PageHeaderComponent implements OnChanges {
       this.changeDetectorRef.detectChanges();
       // Force a Recalculate Style so the 'reveal-image' style is applied
       // The div.cover element will then have { opactiy: 0 and visibility: hidden)
-      this.forceRecalculateStle();
+      this.forceRecalculateStyle();
     }
 
     // Load the image into the browser cache first. When loaded,
@@ -73,7 +73,7 @@ export class PageHeaderComponent implements OnChanges {
     }
   }
 
-  private forceRecalculateStle() {
+  private forceRecalculateStyle() {
     return window.scrollY;
   }
 
