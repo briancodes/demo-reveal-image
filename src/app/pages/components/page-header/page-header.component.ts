@@ -32,10 +32,6 @@ export class PageHeaderComponent implements OnChanges {
 
   revealImage = false;
 
-  // UglifyJS strips out unused expressions in --prod mode e.g window.scrollY
-  // This is a workaround: the assignment is not considered unused
-  unusedExpressionVariable: any;
-
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private changeDetectorRef: ChangeDetectorRef
