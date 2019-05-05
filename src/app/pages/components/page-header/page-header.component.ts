@@ -73,6 +73,9 @@ export class PageHeaderComponent implements OnChanges {
     }
   }
 
+  // Polymer iron-collapse uses this.scrollTop = this.scrollTop
+  // to force layout without being removed by compilers
+  // https://github.com/PolymerElements/iron-collapse/blob/master/iron-collapse.js#L200
   private forceRecalculateStyle() {
     return window.scrollY;
   }
